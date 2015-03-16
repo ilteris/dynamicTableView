@@ -14,6 +14,9 @@
 		A2E41DAB1AB370C2006A8669 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E41DAA1AB370C2006A8669 /* Images.xcassets */; };
 		A2E41DAE1AB370C2006A8669 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E41DAC1AB370C2006A8669 /* LaunchScreen.xib */; };
 		A2E41DBA1AB370C2006A8669 /* KeepTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E41DB91AB370C2006A8669 /* KeepTestTests.m */; };
+		A2E41DC41AB3737C006A8669 /* source.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2E41DC31AB3737C006A8669 /* source.plist */; };
+		A2E41DC71AB37944006A8669 /* KeepTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E41DC61AB37944006A8669 /* KeepTableViewCell.m */; };
+		A2E41DCC1AB68473006A8669 /* UIView+CircularProfileImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E41DCB1AB68473006A8669 /* UIView+CircularProfileImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		A2E41DB31AB370C2006A8669 /* KeepTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeepTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E41DB81AB370C2006A8669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2E41DB91AB370C2006A8669 /* KeepTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeepTestTests.m; sourceTree = "<group>"; };
+		A2E41DC31AB3737C006A8669 /* source.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = source.plist; sourceTree = "<group>"; };
+		A2E41DC51AB37944006A8669 /* KeepTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepTableViewCell.h; sourceTree = "<group>"; };
+		A2E41DC61AB37944006A8669 /* KeepTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepTableViewCell.m; sourceTree = "<group>"; };
+		A2E41DCA1AB68473006A8669 /* UIView+CircularProfileImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CircularProfileImage.h"; sourceTree = "<group>"; };
+		A2E41DCB1AB68473006A8669 /* UIView+CircularProfileImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CircularProfileImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +93,12 @@
 				A2E41DA21AB370C2006A8669 /* AppDelegate.m */,
 				A2E41DA41AB370C2006A8669 /* ViewController.h */,
 				A2E41DA51AB370C2006A8669 /* ViewController.m */,
+				A2E41DCA1AB68473006A8669 /* UIView+CircularProfileImage.h */,
+				A2E41DCB1AB68473006A8669 /* UIView+CircularProfileImage.m */,
 				A2E41DA71AB370C2006A8669 /* Main.storyboard */,
+				A2E41DC51AB37944006A8669 /* KeepTableViewCell.h */,
+				A2E41DC61AB37944006A8669 /* KeepTableViewCell.m */,
+				A2E41DC31AB3737C006A8669 /* source.plist */,
 				A2E41DAA1AB370C2006A8669 /* Images.xcassets */,
 				A2E41DAC1AB370C2006A8669 /* LaunchScreen.xib */,
 				A2E41D9D1AB370C2006A8669 /* Supporting Files */,
@@ -202,6 +215,7 @@
 				A2E41DA91AB370C2006A8669 /* Main.storyboard in Resources */,
 				A2E41DAE1AB370C2006A8669 /* LaunchScreen.xib in Resources */,
 				A2E41DAB1AB370C2006A8669 /* Images.xcassets in Resources */,
+				A2E41DC41AB3737C006A8669 /* source.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +234,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2E41DA61AB370C2006A8669 /* ViewController.m in Sources */,
+				A2E41DCC1AB68473006A8669 /* UIView+CircularProfileImage.m in Sources */,
 				A2E41DA31AB370C2006A8669 /* AppDelegate.m in Sources */,
 				A2E41DA01AB370C2006A8669 /* main.m in Sources */,
+				A2E41DC71AB37944006A8669 /* KeepTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KeepTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KeepTest;
 			};
 			name = Debug;
 		};
@@ -355,7 +371,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KeepTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KeepTest;
 			};
 			name = Release;
 		};
@@ -373,7 +389,7 @@
 				);
 				INFOPLIST_FILE = KeepTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KeepTestTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeepTest.app/KeepTest";
 			};
 			name = Debug;
@@ -388,7 +404,7 @@
 				);
 				INFOPLIST_FILE = KeepTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KeepTestTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeepTest.app/KeepTest";
 			};
 			name = Release;
